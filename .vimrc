@@ -42,7 +42,36 @@ set relativenumber
 set scrolloff=8
 set signcolumn=yes
 
+"Match pairs
+set matchpairs+=<:>
+
 " command mode
 set showcmd
-set noshowmode
+" set noshowmode
 set conceallevel=1
+
+" disable noises
+set noerrorbells visualbell t_vb=
+
+" backup and cp
+set backupdir=/tmp//,.
+set undodir=~/.vim/undodir
+set undofile
+set clipboard=unnamed
+
+" Search settings
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+
+" enable mouse
+set mouse=a
+
+" --------------------------------------------------------
+" PLUGINS
+" --------------------------------------------------------
+
+call plug#begin('~/.vim/plugged')
+
+call plug#end()

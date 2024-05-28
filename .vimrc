@@ -32,8 +32,16 @@ set autoindent
 set smartindent
 set smarttab
 set expandtab
+
+" Show hidden characters
+
 " set list
 " set listchars=eol:.,tab:>-,trail:~,extends:>,precedes:<
+
+" AutoComplete
+set complete+=kspell
+set completeopt=menuone,longest
+set shortmess+=c
 
 " cursor and position
 set cursorline
@@ -74,4 +82,13 @@ set mouse=a
 
 call plug#begin('~/.vim/plugged')
 
+" AutoComplete prompt
+Plug 'vim-scripts/AutoComplPop'
+
+
 call plug#end()
+" :Pluginstall
+" :Plugupdate
+" :PlugDiff
+
+

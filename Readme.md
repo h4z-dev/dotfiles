@@ -15,7 +15,6 @@ brew install stow
 or
 ```
 pacman -S stow
-
 ```
 then we run
 ```
